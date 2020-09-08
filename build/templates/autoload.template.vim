@@ -4,6 +4,7 @@ let s:overrides = get(g:, "onedark_color_overrides", {})
 
 let s:colors = {
       \ "red": get(s:overrides, "red", { "gui": "<%=red.gui%>", "cterm": "<%=red.cterm%>", "cterm16": "<%=red.cterm16%>" }),
+      \ "pink": get(s:overrides, "pink", { "gui": "<%=red.pink%>", "cterm": "<%=pink.cterm%>", "cterm16": "<%=pink.cterm16%>" }),
       \ "dark_red": get(s:overrides, "dark_red", { "gui": "<%=dark_red.gui%>", "cterm": "<%=dark_red.cterm%>", "cterm16": "<%=dark_red.cterm16%>" }),
       \ "green": get(s:overrides, "green", { "gui": "<%=green.gui%>", "cterm": "<%=green.cterm%>", "cterm16": "<%=green.cterm16%>" }),
       \ "yellow": get(s:overrides, "yellow", { "gui": "<%=yellow.gui%>", "cterm": "<%=yellow.cterm%>", "cterm16": "<%=yellow.cterm16%>" }),

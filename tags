@@ -1,0 +1,104 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+airline#themes#onedark#refresh	autoload/airline/themes/onedark.vim	/^function! airline#themes#onedark#refresh()$/;"	f
+g:colors_name	colors/onedark.vim	/^let g:colors_name="onedark"$/;"	v
+g:lightline#colorscheme#onedark#palette	autoload/lightline/colorscheme/onedark.vim	/^let g:lightline#colorscheme#onedark#palette = lightline#colorscheme#flatten(s:p)$/;"	v
+g:onedark_termcolors	colors/onedark.vim	/^  let g:onedark_termcolors = 256$/;"	v
+g:onedark_terminal_italics	colors/onedark.vim	/^  let g:onedark_terminal_italics = 0$/;"	v
+g:terminal_ansi_colors	colors/onedark.vim	/^let g:terminal_ansi_colors = [$/;"	v
+g:terminal_color_0	colors/onedark.vim	/^  let g:terminal_color_0 =  s:black.gui$/;"	v
+g:terminal_color_1	colors/onedark.vim	/^  let g:terminal_color_1 =  s:red.gui$/;"	v
+g:terminal_color_10	colors/onedark.vim	/^  let g:terminal_color_10 = s:green.gui " No dark version$/;"	v
+g:terminal_color_11	colors/onedark.vim	/^  let g:terminal_color_11 = s:dark_yellow.gui$/;"	v
+g:terminal_color_12	colors/onedark.vim	/^  let g:terminal_color_12 = s:blue.gui " No dark version$/;"	v
+g:terminal_color_13	colors/onedark.vim	/^  let g:terminal_color_13 = s:purple.gui " No dark version$/;"	v
+g:terminal_color_14	colors/onedark.vim	/^  let g:terminal_color_14 = s:cyan.gui " No dark version$/;"	v
+g:terminal_color_15	colors/onedark.vim	/^  let g:terminal_color_15 = s:comment_grey.gui$/;"	v
+g:terminal_color_2	colors/onedark.vim	/^  let g:terminal_color_2 =  s:green.gui$/;"	v
+g:terminal_color_3	colors/onedark.vim	/^  let g:terminal_color_3 =  s:yellow.gui$/;"	v
+g:terminal_color_4	colors/onedark.vim	/^  let g:terminal_color_4 =  s:blue.gui$/;"	v
+g:terminal_color_5	colors/onedark.vim	/^  let g:terminal_color_5 =  s:purple.gui$/;"	v
+g:terminal_color_6	colors/onedark.vim	/^  let g:terminal_color_6 =  s:cyan.gui$/;"	v
+g:terminal_color_7	colors/onedark.vim	/^  let g:terminal_color_7 =  s:white.gui$/;"	v
+g:terminal_color_8	colors/onedark.vim	/^  let g:terminal_color_8 =  s:visual_grey.gui$/;"	v
+g:terminal_color_9	colors/onedark.vim	/^  let g:terminal_color_9 =  s:dark_red.gui$/;"	v
+g:terminal_color_background	colors/onedark.vim	/^  let g:terminal_color_background = g:terminal_color_0$/;"	v
+g:terminal_color_foreground	colors/onedark.vim	/^  let g:terminal_color_foreground = g:terminal_color_7$/;"	v
+h	colors/onedark.vim	/^function! s:h(group, style, ...)$/;"	f
+onedark#GetColors	autoload/onedark.vim	/^function! onedark#GetColors()$/;"	f
+onedark#GetColors	build/templates/autoload.template.vim	/^function! onedark#GetColors()$/;"	f
+onedark#extend_highlight	colors/onedark.vim	/^function! onedark#extend_highlight(group, style)$/;"	f
+onedark#set_highlight	colors/onedark.vim	/^function! onedark#set_highlight(group, style)$/;"	f
+s:black	autoload/lightline/colorscheme/onedark.vim	/^let s:black = [ s:colors.black.gui, s:term_black ]$/;"	v
+s:black	colors/onedark.vim	/^let s:black = s:colors.black$/;"	v
+s:blue	autoload/lightline/colorscheme/onedark.vim	/^let s:blue = [ s:colors.blue.gui, s:term_blue ]$/;"	v
+s:blue	colors/onedark.vim	/^let s:blue = s:colors.blue$/;"	v
+s:colors	autoload/lightline/colorscheme/onedark.vim	/^let s:colors = onedark#GetColors()$/;"	v
+s:colors	autoload/onedark.vim	/^let s:colors = {$/;"	v
+s:colors	build/templates/autoload.template.vim	/^let s:colors = {$/;"	v
+s:colors	colors/onedark.vim	/^let s:colors = onedark#GetColors()$/;"	v
+s:comment_grey	colors/onedark.vim	/^let s:comment_grey = s:colors.comment_grey$/;"	v
+s:cursor_grey	colors/onedark.vim	/^let s:cursor_grey = s:colors.cursor_grey$/;"	v
+s:cyan	colors/onedark.vim	/^let s:cyan = s:colors.cyan$/;"	v
+s:dark_red	colors/onedark.vim	/^let s:dark_red = s:colors.dark_red$/;"	v
+s:dark_yellow	colors/onedark.vim	/^let s:dark_yellow = s:colors.dark_yellow$/;"	v
+s:green	autoload/lightline/colorscheme/onedark.vim	/^let s:green = [ s:colors.green.gui, s:term_green ]$/;"	v
+s:green	colors/onedark.vim	/^let s:green = s:colors.green$/;"	v
+s:grey	autoload/lightline/colorscheme/onedark.vim	/^let s:grey = [ s:colors.visual_grey.gui, s:term_grey ]$/;"	v
+s:group_colors	colors/onedark.vim	/^let s:group_colors = {} " Cache of default highlight group settings, for later reference via `onedark#extend_highlight`$/;"	v
+s:gutter_fg_grey	colors/onedark.vim	/^let s:gutter_fg_grey = s:colors.gutter_fg_grey$/;"	v
+s:menu_grey	colors/onedark.vim	/^let s:menu_grey = s:colors.menu_grey$/;"	v
+s:overrides	autoload/onedark.vim	/^let s:overrides = get(g:, "onedark_color_overrides", {})$/;"	v
+s:overrides	build/templates/autoload.template.vim	/^let s:overrides = get(g:, "onedark_color_overrides", {})$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.inactive.left =  [ [ s:white, s:grey ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.inactive.middle = [ [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.inactive.right = [ [ s:black, s:white ], [ s:black, s:white ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.insert.left = [ [ s:black, s:blue ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.insert.right = [ [ s:black, s:blue ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.normal.error = [ [ s:black, s:red ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.normal.left = [ [ s:black, s:green ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.normal.middle = [ [ s:white, s:black ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.normal.right = [ [ s:black, s:green ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.normal.warning = [ [ s:black, s:yellow ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.replace.left = [ [ s:black, s:red ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.replace.right = [ [ s:black, s:red ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.tabline.left = [ [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.tabline.middle = [ [ s:white, s:black ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.tabline.right = [ [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.tabline.tabsel = [ [ s:black, s:white ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.visual.left = [ [ s:black, s:purple ], [ s:white, s:grey ] ]$/;"	v
+s:p	autoload/lightline/colorscheme/onedark.vim	/^let s:p.visual.right = [ [ s:black, s:purple ], [ s:white, s:grey ] ]$/;"	v
+s:pink	colors/onedark.vim	/^let s:pink = s:colors.pink$/;"	v
+s:purple	autoload/lightline/colorscheme/onedark.vim	/^let s:purple = [ s:colors.purple.gui, s:term_purple ]$/;"	v
+s:purple	colors/onedark.vim	/^let s:purple = s:colors.purple$/;"	v
+s:red	autoload/lightline/colorscheme/onedark.vim	/^let s:red = [ s:colors.red.gui, s:term_red ]$/;"	v
+s:red	colors/onedark.vim	/^let s:red = s:colors.red$/;"	v
+s:special_grey	colors/onedark.vim	/^let s:special_grey = s:colors.special_grey$/;"	v
+s:term_black	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_black = s:colors.black.cterm$/;"	v
+s:term_black	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_black = s:colors.black.cterm16$/;"	v
+s:term_blue	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_blue = s:colors.blue.cterm$/;"	v
+s:term_blue	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_blue = s:colors.blue.cterm16$/;"	v
+s:term_green	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_green = s:colors.green.cterm$/;"	v
+s:term_green	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_green = s:colors.green.cterm16$/;"	v
+s:term_grey	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_grey = s:colors.cursor_grey.cterm$/;"	v
+s:term_grey	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_grey = s:colors.cursor_grey.cterm16$/;"	v
+s:term_purple	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_purple = s:colors.purple.cterm$/;"	v
+s:term_purple	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_purple = s:colors.purple.cterm16$/;"	v
+s:term_red	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_red = s:colors.red.cterm$/;"	v
+s:term_red	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_red = s:colors.red.cterm16$/;"	v
+s:term_white	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_white = s:colors.white.cterm$/;"	v
+s:term_white	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_white = s:colors.white.cterm16$/;"	v
+s:term_yellow	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_yellow = s:colors.yellow.cterm$/;"	v
+s:term_yellow	autoload/lightline/colorscheme/onedark.vim	/^  let s:term_yellow = s:colors.yellow.cterm16$/;"	v
+s:vertsplit	colors/onedark.vim	/^let s:vertsplit = s:colors.vertsplit$/;"	v
+s:visual_black	colors/onedark.vim	/^let s:visual_black = s:colors.visual_black " Black out selected text in 16-color visual mode$/;"	v
+s:visual_grey	colors/onedark.vim	/^let s:visual_grey = s:colors.visual_grey$/;"	v
+s:white	autoload/lightline/colorscheme/onedark.vim	/^let s:white = [ s:colors.white.gui, s:term_white ]$/;"	v
+s:white	colors/onedark.vim	/^let s:white = s:colors.white$/;"	v
+s:yellow	autoload/lightline/colorscheme/onedark.vim	/^let s:yellow = [ s:colors.yellow.gui, s:term_yellow ]$/;"	v
+s:yellow	colors/onedark.vim	/^let s:yellow = s:colors.yellow$/;"	v

@@ -133,6 +133,7 @@ endfunction
 let s:colors = onedark#GetColors()
 
 let s:red = s:colors.red
+let s:pink = s:colors.pink
 let s:dark_red = s:colors.dark_red
 let s:green = s:colors.green
 let s:yellow = s:colors.yellow
@@ -237,7 +238,7 @@ call s:h("MatchParen", { "fg": s:blue, "gui": "underline", "cterm": "underline" 
 call s:h("ModeMsg", {}) " 'showmode' message (e.g., "-- INSERT --")
 call s:h("MoreMsg", {}) " more-prompt
 call s:h("NonText", { "fg": s:special_grey }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
-call s:h("Normal", { "fg": s:white, "bg": s:black }) " normal text
+call s:h("Normal", { "fg": s:red, "bg": s:black }) " normal text
 call s:h("Pmenu", { "bg": s:menu_grey }) " Popup menu: normal item.
 call s:h("PmenuSel", { "fg": s:black, "bg": s:blue }) " Popup menu: selected item.
 call s:h("PmenuSbar", { "bg": s:special_grey }) " Popup menu: scrollbar.
@@ -343,6 +344,9 @@ call s:h("javaScriptRequire", { "fg": s:cyan })
 call s:h("javaScriptReserved", { "fg": s:purple })
 " https://github.com/pangloss/vim-javascript
 call s:h("jsArrowFunction", { "fg": s:purple })
+call s:h("jsVariableDef", { "fg": s:blue })
+"call s:h("jsDestructuringPropertyValue", { "fg": s:yellow })
+"call s:h("jsDestructuringProperty", { "fg": s:yellow })
 call s:h("jsClassKeyword", { "fg": s:purple })
 call s:h("jsClassMethodType", { "fg": s:purple })
 call s:h("jsDocParam", { "fg": s:blue })
@@ -365,8 +369,14 @@ call s:h("jsStorageClass", { "fg": s:purple })
 call s:h("jsSuper", { "fg": s:red })
 call s:h("jsTemplateBraces", { "fg": s:dark_red })
 call s:h("jsTemplateVar", { "fg": s:green })
-call s:h("jsThis", { "fg": s:red })
+call s:h("jsThis", { "fg": s:purple })
 call s:h("jsUndefined", { "fg": s:dark_yellow })
+call s:h("jsObjectKey", { "fg": s:dark_yellow })
+
+"jsx
+call s:h("jsxAttrib", { "fg": s:dark_yellow })
+call s:h("jsxAttribKeyword", { "fg": s:dark_yellow })
+
 " https://github.com/othree/yajs.vim
 call s:h("javascriptArrowFunc", { "fg": s:purple })
 call s:h("javascriptClassExtends", { "fg": s:purple })
@@ -430,6 +440,16 @@ call s:h("markdownListMarker", { "fg": s:red })
 call s:h("markdownOrderedListMarker", { "fg": s:red })
 call s:h("markdownRule", { "fg": s:comment_grey })
 call s:h("markdownUrl", { "fg": s:cyan, "gui": "underline", "cterm": "underline" })
+
+"Python
+call s:h("pythonStrFormatting ", { "fg": s:green })
+call s:h("pythonStrTemplate", { "fg": s:green })
+call s:h("pythonBoolean", { "fg": s:purple })
+call s:h("pythonNone ", { "fg": s:cyan })
+call s:h("pythonBuiltinObj", { "fg": s:yellow })
+call s:h("pythonParens", { "fg": s:purple })
+call s:h("pythonBrackets", { "fg": s:purple })
+call s:h("pythonBraces", { "fg": s:purple })
 
 " Perl
 call s:h("perlFiledescRead", { "fg": s:green })
@@ -540,9 +560,10 @@ call s:h("xmlTagName", { "fg": s:red })
 
 " Plugin Highlighting {{{
 
-" airblade/vim-gitgutter
+" airblade/vim-gitgutterr
 hi link GitGutterAdd    SignifySignAdd
 hi link GitGutterChange SignifySignChange
+hi link GitGutterChangeDelete SignifySignChange
 hi link GitGutterDelete SignifySignDelete
 
 " easymotion/vim-easymotion
@@ -555,6 +576,12 @@ call s:h("EasyMotionShade",  { "fg": s:comment_grey })
 call s:h("SignifySignAdd", { "fg": s:green })
 call s:h("SignifySignChange", { "fg": s:yellow })
 call s:h("SignifySignDelete", { "fg": s:red })
+
+"Coc Gitr
+hi link CocGitAdded SignifySignAdd
+hi link CocGitChanged SignifySignChange
+hi link CocGitRemoved SignifySignDelete
+hi link CocGitChangedRemoved SignifySignDelete
 
 " neomake/neomake
 call s:h("NeomakeWarningSign", { "fg": s:yellow })

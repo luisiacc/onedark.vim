@@ -11,6 +11,10 @@
 *.color1:       <%=red.gui%>
 *.color9:       <%=dark_red.gui%>
 
+! pink
+*.color1:       <%=pink.gui%>
+*.color9:       <%=pink.gui%>
+
 ! green
 *.color2:       <%=green.gui%>
 *.color10:      <%=green.gui%>
